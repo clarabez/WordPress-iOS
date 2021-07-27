@@ -6,6 +6,7 @@ class EditorPostSettings: BaseScreen {
     let categoriesSection: XCUIElement
     let tagsSection: XCUIElement
     let featuredImageButton: XCUIElement
+    let publishDateButton: XCUIElement
     var changeFeaturedImageButton: XCUIElement {
         return settingsTable.cells["CurrentFeaturedImage"]
     }
@@ -16,6 +17,7 @@ class EditorPostSettings: BaseScreen {
         categoriesSection = settingsTable.cells["Categories"]
         tagsSection = settingsTable.cells["Tags"]
         featuredImageButton = settingsTable.cells["SetFeaturedImage"]
+        publishDateButton = settingsTable.cells.element(boundBy: 2) // to identify "Publish Date" button on page
 
         super.init(element: settingsTable)
     }
@@ -37,6 +39,14 @@ class EditorPostSettings: BaseScreen {
 
         return CategoriesComponent()
     }
+    
+    func setSchedulledPost() -> EditorPostSettings {
+            publishDateButton.tap()
+            PublishDateComponent()
+                .setForNextThreeHours()
+                .goBackToSettings()
+            return EditorPostSettings()
+        }
 
     func openTags() -> TagsComponent {
         tagsSection.tap()
