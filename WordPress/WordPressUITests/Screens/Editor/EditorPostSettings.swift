@@ -39,7 +39,7 @@ class EditorPostSettings: BaseScreen {
 
         return CategoriesComponent()
     }
-    
+
     func setSchedulledPost() -> EditorPostSettings {
             publishDateButton.tap()
             PublishDateComponent()
