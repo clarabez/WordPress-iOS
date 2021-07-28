@@ -71,7 +71,7 @@ class BlockEditorScreen: BaseScreen {
      Adds an image block with latest image from device.
      */
     func addImage() -> BlockEditorScreen {
-        addBlock("Image block")
+        addImageBlockMenu.tap()
         addImageByOrder(id: 0)
 
         return self

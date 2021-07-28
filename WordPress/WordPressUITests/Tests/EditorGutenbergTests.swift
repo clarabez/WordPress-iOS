@@ -12,15 +12,15 @@ class EditorGutenbergTests: XCTestCase {
             .tabBar.gotoBlockEditorScreen()
     }
 
-    override func tearDown() {
-        takeScreenshotOfFailedTest()
-        if editorScreen != nil && !TabNavComponent.isVisible() {
-            EditorFlow.returnToMainEditorScreen()
-            editorScreen.closeEditor()
-        }
-        LoginFlow.logoutIfNeeded()
-        super.tearDown()
-    }
+//    override func tearDown() {
+//        takeScreenshotOfFailedTest()
+//        if editorScreen != nil && !TabNavComponent.isVisible() {
+//            EditorFlow.returnToMainEditorScreen()
+//            editorScreen.closeEditor()
+//        }
+//        LoginFlow.logoutIfNeeded()
+//        super.tearDown()
+//    }
 
     func testTextPostPublish() throws {
         try skipTillBloggingRemindersAreHandled()
@@ -94,7 +94,6 @@ class EditorGutenbergTests: XCTestCase {
             .addVideo()
             .publish()
             .viewPublishedPost(withTitle: title)
-//            .verifyEpilogueDisplays(postTitle: title, siteAddress: WPUITestCredentials.testWPcomSitePrimaryAddress)
             .done()
     }
 
@@ -108,13 +107,8 @@ class EditorGutenbergTests: XCTestCase {
             .closePostSettings()
         BlockEditorScreen().schedule()
             .viewPublishedPost(withTitle: title)
+            .done()
     }
-
-    func testCreateNewPageFromMultiuserAndChangeTheAuthor() {
-        editorScreen
-            .dismissNotificationAlertIfNeeded(.accept)
-    }
-
 
     func skipTillBloggingRemindersAreHandled(file: StaticString = #file, line: UInt = #line) throws {
         try XCTSkipIf(true, "Skipping test because we haven't added support for Blogging Reminders. See https://github.com/wordpress-mobile/WordPress-iOS/issues/16797.", file: file, line: line)
