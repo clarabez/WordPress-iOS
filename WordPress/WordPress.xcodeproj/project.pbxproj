@@ -2010,6 +2010,7 @@
 		D40F1B0426B0CC22000306F7 /* PublishDateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F1B0326B0CC21000306F7 /* PublishDateComponent.swift */; };
 		D40F1B0626B0CD39000306F7 /* SitePageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F1B0526B0CD39000306F7 /* SitePageScreen.swift */; };
 		D40F1B0826B0D38C000306F7 /* StoryPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F1B0726B0D38C000306F7 /* StoryPageScreen.swift */; };
+		D40F1B0A26B0D6D2000306F7 /* SitePageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40F1B0926B0D6D2000306F7 /* SitePageTests.swift */; };
 		D8071631203DA23700B32FD9 /* Accessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8071630203DA23700B32FD9 /* Accessible.swift */; };
 		D809E686203F0215001AA0DE /* ReaderPostCardCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D809E685203F0215001AA0DE /* ReaderPostCardCellTests.swift */; };
 		D80BC79C207464D200614A59 /* MediaLibraryMediaPickingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80BC79B207464D200614A59 /* MediaLibraryMediaPickingCoordinator.swift */; };
@@ -6688,6 +6689,7 @@
 		D40F1B0326B0CC21000306F7 /* PublishDateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishDateComponent.swift; sourceTree = "<group>"; };
 		D40F1B0526B0CD39000306F7 /* SitePageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitePageScreen.swift; sourceTree = "<group>"; };
 		D40F1B0726B0D38C000306F7 /* StoryPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageScreen.swift; sourceTree = "<group>"; };
+		D40F1B0926B0D6D2000306F7 /* SitePageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitePageTests.swift; sourceTree = "<group>"; };
 		D61CEAC1CB25AE65B26BDC68 /* Pods-WordPressShareExtension.release-alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressShareExtension.release-alpha.xcconfig"; path = "../Pods/Target Support Files/Pods-WordPressShareExtension/Pods-WordPressShareExtension.release-alpha.xcconfig"; sourceTree = "<group>"; };
 		D67306CD28F2440FF6B0065C /* Pods-WordPressIntents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordPressIntents.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-WordPressIntents/Pods-WordPressIntents.debug.xcconfig"; sourceTree = "<group>"; };
 		D8071630203DA23700B32FD9 /* Accessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessible.swift; sourceTree = "<group>"; };
@@ -12815,6 +12817,7 @@
 				FFA0B7D61CAC1F9F00533B9D /* MainNavigationTests.swift */,
 				BED4D82F1FF11DEF00A11345 /* EditorAztecTests.swift */,
 				CC2BB0CF228ACF710034F9AB /* EditorGutenbergTests.swift */,
+				D40F1B0926B0D6D2000306F7 /* SitePageTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -20269,6 +20272,7 @@
 				FA41044D263932AC00E90EBF /* ActivityLogScreen.swift in Sources */,
 				BE87071B2006E65C004FB5A4 /* NotificationsScreen.swift in Sources */,
 				BE6DD3321FD6803700E55192 /* MeTabScreen.swift in Sources */,
+				D40F1B0A26B0D6D2000306F7 /* SitePageTests.swift in Sources */,
 				BED4D8301FF11DEF00A11345 /* EditorAztecTests.swift in Sources */,
 				BE8707172006B774004FB5A4 /* MySiteScreen.swift in Sources */,
 				CCE55E992242715C002A9634 /* CategoriesComponent.swift in Sources */,
