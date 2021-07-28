@@ -12,15 +12,15 @@ class EditorGutenbergTests: XCTestCase {
             .tabBar.gotoBlockEditorScreen()
     }
 
-//    override func tearDown() {
-//        takeScreenshotOfFailedTest()
-//        if editorScreen != nil && !TabNavComponent.isVisible() {
-//            EditorFlow.returnToMainEditorScreen()
-//            editorScreen.closeEditor()
-//        }
-//        LoginFlow.logoutIfNeeded()
-//        super.tearDown()
-//    }
+    override func tearDown() {
+        takeScreenshotOfFailedTest()
+        if editorScreen != nil && !TabNavComponent.isVisible() {
+            EditorFlow.returnToMainEditorScreen()
+            editorScreen.closeEditor()
+        }
+        LoginFlow.logoutIfNeeded()
+        super.tearDown()
+    }
 
     func testTextPostPublish() throws {
         try skipTillBloggingRemindersAreHandled()
